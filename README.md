@@ -9,9 +9,11 @@ CREATE TABLE IF NOT EXISTS Pessoa (
 );
 
 **********VISUALSTUDIO (backend)**********
+
 Ferramentas > Gerenciador de pacotes do NuGet > Configurações de Pacotes do Nuget > Origens do Pacote > Origem: https://www.myget.org/F/tnf/api/v3/index.json
 
 
 **********VISUALSTUDIOCODE (frontend)**********
+
 npm install
 ng server
