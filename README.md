@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS Pessoa (
     CPF VARCHAR(11)
 );
 
+
 **********VISUALSTUDIO (backend)**********
 
 Ferramentas > Gerenciador de pacotes do NuGet > Configurações de Pacotes do Nuget > Origens do Pacote > Origem: https://www.myget.org/F/tnf/api/v3/index.json
