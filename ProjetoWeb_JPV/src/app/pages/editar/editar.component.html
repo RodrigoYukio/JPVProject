@@ -1,0 +1,5 @@
+
+  <div *ngIf="pessoa">
+    <app-pessoa-form [btnAcao]="btnAcao" [btnTitulo]="btnTitulo" [dadosPessoa]="pessoa" (onSubmit)="editPessoa($event)" ></app-pessoa-form>
+  </div>
+

@@ -1,0 +1,47 @@
+
+
+
+<mat-card>
+    <h1>{{btnTitulo}}</h1>
+
+  <form  [formGroup]="PessoaForm" (ngSubmit)="submit()" #formDir="ngForm">
+  <input type="hidden" value="" formControlName="id">
+
+  <div class="input-box">
+    <mat-form-field>
+      <mat-label>Nome Completo:</mat-label>
+      <input matInput id="nomeCompleto" type="text" class="form-control text-dark" formControlName="nomeCompleto" placeholder="Insira o nome seu nome completo!" required>
+    </mat-form-field>
+  </div>
+
+  <div class="input-box">
+    <mat-form-field>
+      <mat-label>Data de Nascimento:</mat-label>
+      <input matInput id="dataNascimento" type="text" class="form-control text-dark" formControlName="dataNascimento" placeholder="Insira sua data de nascimento!">
+    </mat-form-field>
+  </div>
+
+  <div class="input-box">
+    <mat-form-field>
+      <mat-label>Valor de Renda:</mat-label>
+      <input matInput id="valorRenda" type="text" class="form-control text-dark" formControlName="valorRenda" placeholder="Insira o seu valor de renda!" required>
+    </mat-form-field>
+  </div>
+
+  <div  class="input-box">
+    <mat-form-field>
+      <mat-label>CPF:</mat-label>
+         <input matInput id="cpf" type="text" class="form-control  text-dark" formControlName="cpf" placeholder="Insira seu CPF" required>
+     </mat-form-field>
+  </div>
+
+
+<div  class="btn-box">
+    <button type="submit" class="btn btn-success w-50" [disabled]="false"  mat-raised-button color="accent" >{{btnAcao}}</button>
+    <button class="btn btn-primary w-50" routerLink=""   mat-raised-button >Voltar</button>
+</div>
+
+
+</form>
+
+</mat-card>
